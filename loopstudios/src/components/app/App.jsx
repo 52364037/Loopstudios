@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../navbar/Navbar';
 import Header from '../header/Header';
+import GlobalStyles from "./StyleApp";
 
 const App = () => {
   return (
    <>
-   <Navbar/>
+   <GlobalStyles/>
    <Header/>
    </>
   )

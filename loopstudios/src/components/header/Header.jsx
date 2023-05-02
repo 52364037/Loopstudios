@@ -1,10 +1,14 @@
 import React from 'react'
-import {StyleHeader} from './StyleHeader'
+import Navbar from '../navbar/Navbar';
+import { StyleImage } from './StyleHeader'
 
 const Header = () => {
   return (
-    <StyleHeader>
-      </StyleHeader>
+    <StyleImage>
+      <header>
+      <Navbar/>
+      </header>
+      </StyleImage>
   )
 }
 

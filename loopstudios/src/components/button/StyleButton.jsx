@@ -5,6 +5,7 @@ export const StylesButton = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 3rem 9rem;
+  font-family: 'Josefin Sans', sans-serif;
   button {
     padding: 0.9rem 3rem 0.75rem;
     align-items: center;

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/img/logo.svg';
 import {StylesNav} from './StyleNavbar';
-const Navbar = () => {
+const Navbar = ({display}) => {
   const links= [
     {
       name: "About",
@@ -23,10 +23,10 @@ const Navbar = () => {
       name: "Support",
       url: ""
     }
-    
+
   ]
   return (
-    <StylesNav>
+    <StylesNav display={display}>
       <figure>
         <img src={logo} alt="" />
       </figure>
@@ -39,4 +39,3 @@ const Navbar = () => {
   );
 }
 export default Navbar;
-

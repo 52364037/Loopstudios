@@ -1,8 +1,11 @@
 import styled from 'styled-components';
-export const StylesNav = styled.nav`
+
+export const StylesFooter = styled.div`
   display: ${props => props.display};
   justify-content: space-between;
   align-items: center;
+  background-color: black;
+  color: white;
   ul {
     list-style: none;
     display: flex;

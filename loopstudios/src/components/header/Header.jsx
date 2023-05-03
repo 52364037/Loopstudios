@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <StyleImage>
       <header>
-      <Navbar/>
+      <Navbar display={"flex"}/>
       </header>
       </StyleImage>
   )

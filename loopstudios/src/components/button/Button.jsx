@@ -1,8 +1,12 @@
 import React from 'react'
+import {StylesButton} from './StyleButton';
 
 const Button = () => {
   return (
-    <div>Button</div>
+    <StylesButton>
+      <h1> OUR CREATIONS </h1>
+      <button>SEE ALL</button>
+    </StylesButton>
   )
 }
 

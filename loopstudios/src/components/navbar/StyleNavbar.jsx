@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const StylesNav = styled.nav`
-  display: flex;
+  display: ${props => props.display};
   justify-content: space-between;
   align-items: center;
   ul {

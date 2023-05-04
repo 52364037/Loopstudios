@@ -26,7 +26,7 @@ const Navbar = () => {
     
   ]
   return (
-    <StylesNav>
+    <StylesNav display= "flex">
       <figure>
         <img src={logo} alt="" />
       </figure>

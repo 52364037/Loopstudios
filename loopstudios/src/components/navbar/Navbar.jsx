@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from '../../assets/img/logo.svg';
 import {StylesNav} from './StyleNavbar';
-const Navbar = () => {
+
+const imagesIcons = require.context('../../assets/img', true)
+
+const Navbar = ({display, margin, padding}) => {
   const links= [
     {
       name: "About",
@@ -23,20 +26,27 @@ const Navbar = () => {
       name: "Support",
       url: ""
     }
-    
+
   ]
+
+
   return (
-    <StylesNav>
+    <StylesNav display={display} margin={margin} padding={padding}>
       <figure>
         <img src={logo} alt="" />
       </figure>
       <ul>
         {links.map((item, index) => (
-          <li key={`${item.name}-${index}`}>{item.name}</li>
+          <li key={`${item.name}-${index}`}>
+            {item.name}
+            <div className="line"></div>
+          </li>
         ))}
       </ul>
-    </StylesNav>
+      <div className="burguer-btn">
+        <img src={imagesIcons(`./icon-hamburger.svg`)} alt="" />
+      </div>
+  </StylesNav>
   );
 }
 export default Navbar;
-

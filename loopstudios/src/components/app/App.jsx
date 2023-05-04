@@ -1,13 +1,16 @@
 import React from 'react'
 import Header from '../header/Header';
+import Footer from '../footer/Footer';
 import GlobalStyles from "./StyleApp";
-import MainInteractive from '../mainInteractive/MainInteractive';
+import Main from '../main/Main';
+
 const App = () => {
   return (
    <>
    <GlobalStyles/>
    <Header/>
-   <MainInteractive/>
+   <Main/>
+   <Footer/>
    </>
   )
 }

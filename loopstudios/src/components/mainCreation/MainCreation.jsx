@@ -1,17 +1,15 @@
 import React from 'react'
 import { cards } from '../data/Images';
-import { StyleDivCard, StyleCard, StyleHeaderMain, StyleContainer } from './StylesCreation';
+import { StyleDivCard, StyleCard, StyleContainer } from './StylesCreation';
+import Button from '../button/Button';
 const MainCreation = () => {
   return (
     <section className="creations">
       <StyleContainer>
-        <StyleHeaderMain>
-          <h2>our creations</h2>
-          <button>see all</button>
-        </StyleHeaderMain>
+        <Button/>
         <StyleDivCard>
           {cards.map((card)=>(
-            <StyleCard>
+            <StyleCard className='card'>
               <figure>
                 <img src={card.desktopImg} alt={card.alt}/>
               </figure>

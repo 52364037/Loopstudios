@@ -4,7 +4,7 @@ import {StylesButton} from './StyleButton';
 const Button = () => {
   return (
     <StylesButton>
-      <h1> OUR CREATIONS </h1>
+      <h3>OUR CREATIONS</h3>
       <button>SEE ALL</button>
     </StylesButton>
   )

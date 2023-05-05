@@ -18,7 +18,7 @@ export const StylesFooter = styled.div`
   }
 
   .line {
-    width: 25px;
+    width: 20px;
     height: 2px;
     background-color: white;
     margin: auto;

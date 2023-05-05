@@ -24,8 +24,8 @@ export const StyleImage = styled.div`
         background-image: url(${imgHeaderMobile});
         h1 {
           font-size: 35px;
-          margin-left: 10px;
-          margin-right: 10px;
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
           width: auto;
           margin-top: 9rem;
         }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../assets/img/logo.svg';
 import {StylesNav} from './StyleNavbar';
 
@@ -29,6 +29,12 @@ const Navbar = ({display, margin, padding}) => {
 
   ]
 
+  const [MenuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setMenuOpen(!MenuOpen);
+  };
+
 
   return (
     <StylesNav display={display} margin={margin} padding={padding}>
@@ -43,9 +49,16 @@ const Navbar = ({display, margin, padding}) => {
           </li>
         ))}
       </ul>
-      <div className="burguer-btn">
+      <div className="burguer-btn" onClick={handleMenuClick}>
         <img src={imagesIcons(`./icon-hamburger.svg`)} alt="" />
       </div>
+      {MenuOpen && (
+        <ul className="menu-items">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      )}
   </StylesNav>
   );
 }

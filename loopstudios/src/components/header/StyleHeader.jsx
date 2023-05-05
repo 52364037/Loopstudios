@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import imgHeader from '../../assets/img/imagen-header.jpg';
+import imgHeaderMobile from '../../assets/img/mobile/image-hero.jpg';
+
 export const StyleImage = styled.div`
   background-image: url(${imgHeader});
   background-size: cover;
@@ -19,6 +21,7 @@ export const StyleImage = styled.div`
   }
       /* Media query for 375px */
       @media (max-width: 375px) {
+        background-image: url(${imgHeaderMobile});
         h1 {
           font-size: 35px;
           margin-left: 10px;

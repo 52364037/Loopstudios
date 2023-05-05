@@ -31,7 +31,10 @@ const Footer = () => {
       <div>
         <ul>
           {linksSocialMedias.map((item, index) => (
-            <li key={`${item.img}-${index}`}> <img src={item.img}alt="" /></li>
+
+              <li key={`${item.img}-${index}`}><img src={item.img}alt="" />
+              <div className="line"></div> </li>
+
           ))}
         </ul>
         <div>2021 Loopstudios. All rights reserved.</div>

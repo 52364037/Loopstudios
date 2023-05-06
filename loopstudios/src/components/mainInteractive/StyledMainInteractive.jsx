@@ -33,8 +33,8 @@ export const StyleTextoInteractive = styled.div`
     box-sizing: content-box;
     height: auto;
     position: absolute;
-    bottom: -42%;
-    left: 43%;
+    bottom: -42rem;
+    left: 53%;
     h2 {
         display: flex;
         text-align: start;

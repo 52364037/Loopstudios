@@ -1,21 +1,42 @@
 import React from 'react'
 import { cards } from '../data/Images';
-import { StyleDivCard, StyleCard, StyleHeaderMain, StyleContainer } from './StylesCreation';
+import { StyleDivCard, StyleCard, StyleContainer } from './StylesCreation';
+import Button from '../button/Button';
+import { useState } from 'react';
+import { useEffect } from 'react';
+
 const MainCreation = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const getImageSource = (image) => {
+    return windowWidth <= 375 ? image.mobileImg : image.desktopImg;
+  };
+
   return (
     <section className="creations">
       <StyleContainer>
-        <StyleHeaderMain>
-          <h2>our creations</h2>
-          <button>see all</button>
-        </StyleHeaderMain>
+        <Button/>
         <StyleDivCard>
-          {cards.map((card)=>(
-            <StyleCard>
-              <figure>
-                <img src={card.desktopImg} alt={card.alt}/>
-              </figure>
-              <span>{card.title}</span>
+          {cards.map((card, index)=>(
+            <StyleCard key={index}>
+              <div className='card__container'>
+                <figure>
+                  <img src={getImageSource(card)} alt={card.alt}/>
+                </figure>
+                <span>{card.title}</span>
+              </div>
             </StyleCard>
           ))}
         </StyleDivCard>

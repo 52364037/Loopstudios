@@ -1,35 +1,46 @@
 import styled from 'styled-components';
 
-export const StyleHeaderMain = styled.div`
-    display: flex;
-    justify-content: space-between;
-    h2{
-    color: #000;
-    font-weight: 400;
-    font-size: 1.9rem;
-    justify-content: center;
-    text-transform: uppercase;
-    }
-    button{
-        border: none;
-        cursor: pointer;
-        position: relative;
-        letter-spacing: .125rem;
-        border: solid 0.0625rem #000;
-        text-transform: uppercase;
-        padding: 0.4375rem 1.875rem;
-        background-color: transparent;
-        transition: all .3s ease-in-out;
+export const StyleDivCard = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.7rem;
+    @media screen and (max-width: 375px) {
+        grid-template-columns: repeat(1, 1fr);
     }
     
 `;
-export const StyleDivCard = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, minmax(12.5rem, 1fr));
-    /* grid-template-columns: repeat(4,1fr); */
-`;
 export const StyleContainer = styled.div`
-    padding: 0 3rem 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7.5rem 11.5rem;
+    gap: 1.8rem;   
+    
+    @media screen and (max-width: 375px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 0;
+        margin-bottom: 3rem;
+        h3{
+            font-size: 2rem;
+        }
+        button{
+            display: none;
+        }
+        .card__container span{
+            position: absolute;
+            bottom: 20%;
+            left: 4%;
+            z-index: 10;
+            color: rgb(255, 255, 255);
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 23px;
+            line-height: 28px;
+            text-transform: uppercase;
+            transition: all 0.3s ease 0s;
+            max-width: 45%;
+        }
+    }
 `;
 export const StyleCard = styled.div`
     width: 100%;
@@ -40,7 +51,39 @@ export const StyleCard = styled.div`
     img{
         width: 100%;
     }
-    
+    position: relative;
+    span{
+        position: absolute;
+        bottom: 9%;
+        left: 14%;
+        z-index: 10;
+        color: rgb(255, 255, 255);
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: uppercase;
+        transition: all 0.3s ease 0s;
+        max-width: 70%;
+    }
+    .card__container img{
+        border-radius: 0.25rem;
+        box-shadow: 0 0.3125rem 0.3125rem -0.0625rem rgba(0,0,0,0.6);;
+    }
+    .card__container:hover{
+        opacity: 0.6;
+        cursor: pointer;
+        img{
+            filter: blur(1px);
+        }
+        span{
+            opacity: 2;
+            transform: translate(9%, 14%) scale(1.1);
+        }
+    }
 `;
+
+// export const StyleImage = styled.img`
+//     background-image: url(${props => props.imgURL});
+// `;
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../navbar/Navbar';
-import {StylesFooter} from './StyleFooter';
+import {StyleSocialMedia, StylesFooter} from './StyleFooter';
 
 const imagesSocialMedias = require.context('../../assets/img/socialMedias', true)
 
@@ -28,7 +28,7 @@ const Footer = () => {
   return (
     <StylesFooter display={"flex"}>
       <div><Navbar display="block" margin="0 0 1rem" padding="0"/></div>
-      <div>
+      <StyleSocialMedia>
         <ul>
           {linksSocialMedias.map((item, index) => (
               <li key={`${item.img}-${index}`}><img src={item.img}alt="" />
@@ -36,7 +36,7 @@ const Footer = () => {
           ))}
         </ul>
         <div>2021 Loopstudios. All rights reserved.</div>
-      </div>
+      </StyleSocialMedia>
     </StylesFooter>
   )
 }

@@ -1,16 +1,11 @@
 import styled from 'styled-components';
 
 export const StylesButton = styled.div`
-  display: flex;
+  display: ${props => props.display};
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
   text-transform: uppercase;
-  h3{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 300;
-  }
   button {
     text-transform: uppercase;
     font-family: 'Alata', sans-serif;

@@ -1,11 +1,10 @@
 import React from 'react'
 import {StylesButton} from './StyleButton';
 
-const Button = () => {
+const Button = ({display}) => {
   return (
-    <StylesButton>
-      <h3>our creations</h3>
-      <button>see all</button>
+    <StylesButton display={display}>
+      <button className='boton__mobile'>see all</button>
     </StylesButton>
   )
 }

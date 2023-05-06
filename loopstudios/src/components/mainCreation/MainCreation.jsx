@@ -1,6 +1,6 @@
 import React from 'react'
 import { cards } from '../data/Images';
-import { StyleDivCard, StyleCard, StyleContainer } from './StylesCreation';
+import { StyleDivCard, StyleCard, StyleContainer, StyleHeader, StyleButtonMobile } from './StylesCreation';
 import Button from '../button/Button';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -27,7 +27,10 @@ const MainCreation = () => {
   return (
     <section className="creations">
       <StyleContainer>
-        <Button/>
+        <StyleHeader> 
+          <h3>our creations</h3>
+          <Button/>
+        </StyleHeader>
         <StyleDivCard>
           {cards.map((card, index)=>(
             <StyleCard key={index}>
@@ -40,6 +43,9 @@ const MainCreation = () => {
             </StyleCard>
           ))}
         </StyleDivCard>
+        <StyleButtonMobile>
+          <Button/>
+        </StyleButtonMobile>
       </StyleContainer>
     </section>
   )

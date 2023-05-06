@@ -4,8 +4,8 @@ import {StylesButton} from './StyleButton';
 const Button = () => {
   return (
     <StylesButton>
-      <h3>OUR CREATIONS</h3>
-      <button>SEE ALL</button>
+      <h3>our creations</h3>
+      <button>see all</button>
     </StylesButton>
   )
 }

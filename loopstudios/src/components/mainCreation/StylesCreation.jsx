@@ -19,11 +19,26 @@ export const StyleContainer = styled.div`
         display: grid;
         grid-template-columns: 1fr;
         padding: 0;
+        gap: 0;
+        margin-bottom: 3rem;
         h3{
             font-size: 2rem;
         }
         button{
             display: none;
+        }
+        .card__container span{
+            position: absolute;
+            bottom: 20%;
+            left: 4%;
+            z-index: 10;
+            color: rgb(255, 255, 255);
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 23px;
+            line-height: 28px;
+            text-transform: uppercase;
+            transition: all 0.3s ease 0s;
+            max-width: 45%;
         }
     }
 `;
@@ -44,14 +59,31 @@ export const StyleCard = styled.div`
         z-index: 10;
         color: rgb(255, 255, 255);
         font-family: "Josefin Sans", sans-serif;
-        font-size: 35px;
+        font-size: 30px;
         line-height: 35px;
         text-transform: uppercase;
         transition: all 0.3s ease 0s;
+        max-width: 70%;
     }
-    /* .card:nth-child(2){
-        width: 10rem;
-    } */
+    .card__container img{
+        border-radius: 0.25rem;
+        box-shadow: 0 0.3125rem 0.3125rem -0.0625rem rgba(0,0,0,0.6);;
+    }
+    .card__container:hover{
+        opacity: 0.6;
+        cursor: pointer;
+        img{
+            filter: blur(1px);
+        }
+        span{
+            opacity: 2;
+            transform: translate(9%, 14%) scale(1.1);
+        }
+    }
 `;
+
+// export const StyleImage = styled.img`
+//     background-image: url(${props => props.imgURL});
+// `;
 
 

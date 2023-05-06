@@ -5,18 +5,23 @@ export const StylesButton = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
-  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
   h3{
-    font-size: 3.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
     font-weight: 300;
   }
   button {
-    padding: 0.9rem 3rem 0.75rem;
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    padding: 0.9rem 2.5rem 0.75rem;
     align-items: center;
     border: 1px solid #000;
     background-color: #fff;
     transition: all 300ms cubic-bezier(.215, .61, .355, 1);
     cursor: pointer;
+    letter-spacing: 5px;
     :hover {
       color: #fff;
       background-color: #000;

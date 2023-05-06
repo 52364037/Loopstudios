@@ -26,7 +26,7 @@ export const StyleContainer = styled.div`
         grid-template-columns: 1fr;
         padding: 0;
         gap: 0;
-        margin-bottom: 3rem;
+        margin: 3rem 1rem 1rem;
         h3{
             font-size: 2rem;
         }

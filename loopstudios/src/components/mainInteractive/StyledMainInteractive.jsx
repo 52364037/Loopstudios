@@ -8,8 +8,21 @@ background-image: url(${ImgStyledMainInterctive});
 background-size: cover;
 height: 550px;
 width: 750px;
-margin: 120px;
+margin: 100px;
 position: relative;
+/* Media query for 375px */
+@media (max-width: 375px) {
+      display: flex;
+      top: 0px;
+      left: 0px;
+      padding: 10px;
+      width: auto;
+      height: 300px;
+      margin: 1rem;
+      justify-content: center;
+      margin-top: 3rem;
+
+}
 `;
 export const StyleTextoInteractive = styled.div`
     padding: 6rem;
@@ -19,9 +32,9 @@ export const StyleTextoInteractive = styled.div`
     background: white;
     box-sizing: content-box;
     height: auto;
-    position: relative;
-    top: -430px;
-    left: 750px;
+    position: absolute;
+    bottom: -42%;
+    left: 43%;
     h2 {
         display: flex;
         text-align: start;
@@ -40,9 +53,15 @@ export const StyleTextoInteractive = styled.div`
 /* Media query for 375px */
 @media (max-width: 375px) {
       display: block;
-      top: -50px;
-      left: 180px;
-      padding: 70px;
+      position: unset;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 1rem;
+      max-width: 350px;
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
 
 }
 `;

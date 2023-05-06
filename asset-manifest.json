@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Loopstudios/static/js/main.16154d14.js",
+    "main.js": "/Loopstudios/static/js/main.cf957ee0.js",
     "static/media/image-hero.jpg": "/Loopstudios/static/media/image-hero.9b5aacead42e955824d3.jpg",
     "static/media/imagen-header.jpg": "/Loopstudios/static/media/imagen-header.3de81110dee4f75f44f9.jpg",
     "static/media/image-from-above.jpg": "/Loopstudios/static/media/image-from-above.f316f3f3afc353415f71.jpg",
@@ -22,9 +22,9 @@
     "static/media/icon-facebook.svg": "/Loopstudios/static/media/icon-facebook.e9773e52bc64ea377cb9.svg",
     "static/media/icon-close.svg": "/Loopstudios/static/media/icon-close.bbbbb0069bb8a015e779.svg",
     "static/media/icon-hamburger.svg": "/Loopstudios/static/media/icon-hamburger.5153cb809501d4309c23.svg",
-    "main.16154d14.js.map": "/Loopstudios/static/js/main.16154d14.js.map"
+    "main.cf957ee0.js.map": "/Loopstudios/static/js/main.cf957ee0.js.map"
   },
   "entrypoints": [
-    "static/js/main.16154d14.js"
+    "static/js/main.cf957ee0.js"
   ]
 }

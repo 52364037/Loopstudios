@@ -6,15 +6,16 @@ export const StyleImage = styled.div`
   background-image: url(${imgHeader});
   background-size: cover;
   height: 650px;
+  background-position: center;
   h1 {
-    border: 1px solid #fff;
+    border: 1px solid rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    color: #fff;
-    width: 45%;
-    font-family: 'Alata', sans-serif !important;
+    color: rgb(255, 255, 255);
+    width: 44%;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
-    font-size: 45px;
+    font-size: 63px;
     padding: 2rem;
     margin-left: 10rem;
     margin-top: 5rem;

@@ -67,3 +67,14 @@ export const StylesFooter = styled.div`
 
     }
 `;
+
+export const StyleSocialMedia = styled.div`
+  font-family: "Josefin Sans", sans-serif;
+  @media (max-width: 375px) {
+    ul{
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+    }
+  }
+`;

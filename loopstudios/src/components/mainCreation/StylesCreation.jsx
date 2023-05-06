@@ -13,7 +13,13 @@ export const StyleContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 7.5rem 11.5rem;
-    gap: 1.8rem;   
+    gap: 1.8rem;  
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    } 
     
     @media screen and (max-width: 375px) {
         display: grid;
@@ -23,9 +29,6 @@ export const StyleContainer = styled.div`
         margin-bottom: 3rem;
         h3{
             font-size: 2rem;
-        }
-        button{
-            display: none;
         }
         .card__container span{
             position: absolute;
@@ -82,8 +85,25 @@ export const StyleCard = styled.div`
     }
 `;
 
-// export const StyleImage = styled.img`
-//     background-image: url(${props => props.imgURL});
-// `;
+export const StyleHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 375px) {
+        .boton__mobile{
+            display: none;
+        }
+        justify-content: center;
+    }
+`;
+
+export const StyleButtonMobile = styled.div`
+    display: none;
+    @media screen and (max-width: 375px){
+        display: flex;
+        justify-content: center;
+    }
+`;
 
 

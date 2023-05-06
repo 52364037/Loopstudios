@@ -26,6 +26,7 @@ export const StylesNav = styled.nav`
     display: flex;
     gap: 1rem;
     align-items: center;
+    font-weight: 600;
     cursor: pointer;
     li:hover {
       .line {

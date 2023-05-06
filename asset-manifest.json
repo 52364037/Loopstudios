@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/Loopstudios/static/js/main.16154d14.js",
+    "static/media/image-hero.jpg": "/Loopstudios/static/media/image-hero.9b5aacead42e955824d3.jpg",
+    "static/media/imagen-header.jpg": "/Loopstudios/static/media/imagen-header.3de81110dee4f75f44f9.jpg",
+    "static/media/image-from-above.jpg": "/Loopstudios/static/media/image-from-above.f316f3f3afc353415f71.jpg",
+    "static/media/image-interactive.jpg": "/Loopstudios/static/media/image-interactive.d6a3949b27bb7a0c79c6.jpg",
+    "static/media/thumbnail.jpg": "/Loopstudios/static/media/thumbnail.c8028b1190b6c03c9fe1.jpg",
+    "static/media/image-curiosity.jpg": "/Loopstudios/static/media/image-curiosity.7f14665a1469d012697f.jpg",
+    "static/media/image-soccer-team.jpg": "/Loopstudios/static/media/image-soccer-team.18a63d8df06f1baa727f.jpg",
+    "static/media/image-night-arcade.jpg": "/Loopstudios/static/media/image-night-arcade.a4f25d3b0c5db392403a.jpg",
+    "static/media/image-deep-earth.jpg": "/Loopstudios/static/media/image-deep-earth.2a157951527da6e48ac5.jpg",
+    "static/media/image-grid.jpg": "/Loopstudios/static/media/image-grid.a8ce4f2b638181fb6920.jpg",
+    "static/media/image-fisheye.jpg": "/Loopstudios/static/media/image-fisheye.ff97b54ec44101e44215.jpg",
+    "static/media/image-pocket-borealis.jpg": "/Loopstudios/static/media/image-pocket-borealis.0b89db1f6a9c0e56dcfd.jpg",
+    "static/media/imagen de prueba.jpg": "/Loopstudios/static/media/imagen de prueba.8d990a4ad0a0cb58fde3.jpg",
+    "static/media/logo.svg": "/Loopstudios/static/media/logo.5b4e652aff88b09ef8f1d465f3db445b.svg",
+    "static/media/icon-instagram.svg": "/Loopstudios/static/media/icon-instagram.8d0df55595e16bac2d48.svg",
+    "index.html": "/Loopstudios/index.html",
+    "static/media/icon-pinterest.svg": "/Loopstudios/static/media/icon-pinterest.61a3584463b61d0f0d6b.svg",
+    "static/media/icon-twitter.svg": "/Loopstudios/static/media/icon-twitter.5dc7711ff2433b3b89ee.svg",
+    "static/media/icon-facebook.svg": "/Loopstudios/static/media/icon-facebook.e9773e52bc64ea377cb9.svg",
+    "static/media/icon-close.svg": "/Loopstudios/static/media/icon-close.bbbbb0069bb8a015e779.svg",
+    "static/media/icon-hamburger.svg": "/Loopstudios/static/media/icon-hamburger.5153cb809501d4309c23.svg",
+    "main.16154d14.js.map": "/Loopstudios/static/js/main.16154d14.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.16154d14.js"
+  ]
+}
